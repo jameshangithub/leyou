@@ -1,6 +1,6 @@
 package com.leyou.item.service;
 
-import com.leyou.item.pojo.Item;
+import com.leyou.item.pojo.Category;
 import org.springframework.stereotype.Service;
 
 import java.util.Random;
@@ -12,7 +12,7 @@ import java.util.Random;
 @Service
 public class ItemService {
 
-    public Item saveItem(Item item){
+    public Category saveItem(Category item){
         //新增
         int id = new Random().nextInt(100);
         item.setId(id);

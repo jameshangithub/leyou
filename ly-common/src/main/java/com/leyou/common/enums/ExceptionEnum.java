@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.util.Locale;
+
 /**
  * @author James han
  * @create 2020-01-03 21:59
@@ -13,7 +15,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public enum ExceptionEnum {
 
-    PRICE_CANNOT_BE_NULL(400,"价格不能为空！");
+    PBRAND_CANNOT_BE_NULL(400,"品牌不能为空！"),
+    BRAND_NOT_FOUND(404,"品牌分类没找到"),
+    CATEGORY_NOT_FOUND(404,"商品分类没找到");
 
     /**
      * 状态码
